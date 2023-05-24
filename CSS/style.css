@@ -1,0 +1,160 @@
+/*
+File: style.css
+GUI Assignment: Creating Your First Web Page
+Copyright (c) 2023. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+Last updated: on May 23, 2023
+*/
+
+
+/*Whole page styling*/
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  background-color: #86dce2;
+  padding: 20px;
+  text-align: center;
+}
+
+/*sets the site name contained within span to have different font, 
+  be bold, and have red background*/
+.header #officialName {
+  font-family: fantasy;
+  font-weight: bolder;
+  background-color: #f75757;
+  border-radius: 20px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.overview {
+  background-color: #86dce2;
+  margin: 30px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+/*Styling for the core technologies table along with its contained images.
+  This is to ensure that the table is made of one row and three columns.
+  Each cell is tacked vertically from top down with an 
+  image, title, description, and link to its source*/
+.table {
+  table-layout: fixed;
+  overflow: auto;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+.table td {
+  background-color: #bbeff3;
+  border: 5px solid #b0e5fd;
+  vertical-align: top;
+  min-width: 200px;
+  /*Maintain look on small screens. overflows to scrolling*/
+  width: 33%;
+  /*keep all elements at 1/3 of the box*/
+}
+
+.table img {
+  object-fit: fill;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*End of table styling*/
+
+
+/*Styling for offered services links along with descriptions and images.
+This styling ensures each 3D printing service is stacked vertically with
+an image of their logo to the left, description in the middle, and button
+to navigate to their webpage on the right*/
+.onlineServices {
+  background-color: #86dce2;
+  margin: 30px;
+  padding-top: max(0.005%, 0.001%);
+  padding-bottom: max(1%, 0.5%);
+  text-align: center;
+  border-radius: 15px;
+}
+
+/*Styles each element for each service within the greater class onlineServices.
+  This is ultimately defines how each is layed out on their own while the parent
+  class manages putting them together*/
+.service {
+  background-color: #bbeff3;
+  margin: max(0.5%, 0.2%);
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 20% 70% 10%;
+}
+
+.service img {
+  margin-left: 2%;
+  object-fit: contain;
+  min-width: 50px;
+  max-width: 100%;
+  align-self: center;
+}
+
+.service p {
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: left;
+}
+
+.service button {
+  background-color: #b0e5fd;
+  margin: 4%;
+  border-radius: 15px;
+}
+
+.service button:hover {
+  background-color: #33b9c5;
+}
+
+/*End of onlineServices styling*/
+
+
+/*Styling for the footer and its contained elements.
+  This section ensures a full width background and
+  a visible join us text with a proceeding catch line to theoretically bring 
+  in viewers to the newsletter. The newsletter would be joined via a button
+  that would invite the user to join if existed*/
+footer {
+  background-color: #c4c4c4;
+}
+
+footer h2 {
+  padding-top: 0.5%;
+  text-align: center;
+}
+
+/*Sets the "Join Here" button and onboarding text to be inline with each other within the footer*/
+.onboarding {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.onboarding p {
+  text-align: left;
+  /*keeps the text from touching the button*/
+  padding-right: 2%;
+}
+
+.onboarding button {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  border-radius: 15px;
+  background-color: #b0e5fd;
+  font-weight: bold;
+}
+
+.onboarding button:hover {
+  background-color: #33b9c5;
+}
+
+/*End of footer styling*/

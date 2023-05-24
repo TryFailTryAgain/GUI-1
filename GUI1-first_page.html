@@ -1,0 +1,150 @@
+<!--
+File: GUI1-first_page.html
+GUI Assignment: Creating Your First Web Page
+Copyright (c) 2023. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+Last updated: on May 23, 2023
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Meta information-->
+<head>
+  <meta charset="utf-8" />
+  <title>Additive3D</title>
+  <link rel="stylesheet" href="CSS/style.css/" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <!--Large intro banner-->
+  <div class="header">
+    <h1>Welcome to <span id="officialName">Additive3D-info</span></h1>
+    <h3>Outlining 3D printing tech since 2023</h3>
+  </div>
+
+  <!--Constructs smaller banner bar that could contain navigation in the future-->
+  <div class="overview">
+    <h2>Core technologies</h2>
+    <p>The simple three core 3D printing methods</p>
+  </div>
+
+  <!--Example use of a table containing the core tech and images-->
+  <div class="table">
+    <table>
+      <tr>
+        <td> <!--Cell for FDM printing-->
+          <img src="https://prototypehubs.com/app/uploads/2020/06/FDM-3D-Print-scaled.jpeg" alt="FDM 3D Printer"
+            title="https://prototypehubs.com/app/uploads/2020/06/FDM-3D-Print-scaled.jpeg" />
+          <h2>FDM</h2>
+          <p>
+            Fused deposition modeling, or called filament freeform
+            fabrication, is a 3D printing process that uses a continuous
+            filament of a thermoplastic material. Filament is fed from a large
+            spool through a moving, heated printer extruder head, and is
+            deposited on the growing work. The print head is moved under
+            computer control to define the printed shape. <br />
+            <br />
+            <a href="https://en.wikipedia.org/wiki/Fused_filament_fabrication">-Wikipedia</a>
+          </p>
+        </td>
+
+        <td> <!--Cell for SLA printing-->
+          <img src="https://electroloom.com/wp-content/uploads/2021/08/SLA-3D-Printing.jpg" alt="SLA 3D Printer"
+            title="https://electroloom.com/wp-content/uploads/2021/08/SLA-3D-Printing.jpg" />
+          <h2>SLA</h2>
+          <p>
+            Stereolithography (SLA or SL; also known as vat
+            photopolymerisation, optical fabrication, photo-solidification, or
+            resin printing) is a form of 3D printing technology used for
+            creating models, prototypes, patterns, and production parts in a
+            layer by layer fashion using photochemical processes by which
+            light causes chemical monomers and oligomers to cross-link
+            together to form polymers. Those polymers then make up the body of
+            a three-dimensional solid.<br />
+            <br />
+            <a href="https://en.wikipedia.org/wiki/Stereolithography">-Wikipedia</a>
+          </p>
+        </td>
+
+        <td> <!--Cell for SLS printing-->
+          <img src="https://www.beamler.com/wp-content/uploads/2019/03/oragetblob-e1565789138978.jpg" alt="SLS"
+            title="https://www.beamler.com/wp-content/uploads/2019/03/oragetblob-e1565789138978.jpg" />
+          <h2>SLS</h2>
+          <p>
+            Selective laser sintering (SLS) is an additive manufacturing (AM)
+            technique that uses a laser as the power and heat source to sinter
+            powdered material (typically nylon or polyamide), aiming the laser
+            automatically at points in space defined by a 3D model, binding
+            the material together to create a solid structure. It is similar
+            to selective laser melting; the two are instantiations of the same
+            concept but differ in technical details. SLS is a relatively new
+            technology that so far has mainly been used for rapid prototyping
+            and for low-volume production of component parts. <br /><br />
+            <a href="https://en.wikipedia.org/wiki/Selective_laser_sintering">-Wikipedia</a>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!--Example use of classes and containers as an alternative to a table-->
+  <div class="onlineServices">
+    <h2>Need 3D printing services?</h2>
+    <h3>Look no further, We recommend and trust and use for rapid prototyping and small batch products</h3>
+
+    <!--service class contains an image with title and alt text.
+      A section of text to explain who/what they are/do.
+      A button that links to their service-->
+    <div class="service"> <!--Shapeways-->
+      <img src="https://www.shapeways.com/rrstatic/img/dms-assets/ShapewaysLogo_RGB_Red.svg" alt="Shapeways Logo"
+        title="https://www.shapeways.com/">
+      <p>Shapeways, Inc. is a global, 3D printing marketplace and service. Users design and
+        upload 3D printable files, and Shapeways prints the objects for them or others. Users can have objects
+        printed in over 55 materials and finishes, these include: plastics, precious metals, steel and food-safe
+        ceramics, which were discontinued and have been replaced by porcelain materials.
+        <a href="https://en.wikipedia.org/wiki/Shapeways">-Wikipedia</a>
+      </p>
+      <button onclick="window.location.href='https://www.shapeways.com/'">Visit Shapeways</button>
+    </div>
+
+    <div class="service"> <!--Hubs-->
+      <img src="https://www.finsmes.com/wp-content/uploads/2014/09/3D-Hubs-logo-horizontal.png"
+        alt="Hubs Logo" title="https://www.hubs.com/">
+      <p>Hubs, formerly 3D Hubs, is an online manufacturing platform that offers businesses on-demand access to a global
+        network of manufacturing partners. The platform offers a range of manufacturing services, including 3D printing,
+        CNC machining, injection molding and sheet metal fabrication services.
+        <a href="https://en.wikipedia.org/wiki/Hubs_(company)">-Wikipedia</a>
+      </p>
+      <button onclick="window.location.href='https://www.hubs.com/'">Visit Hubs</button>
+    </div>
+
+    <div class="service"> <!--i.materialise-->
+      <img src="https://i.materialise.com/img/logo.png" alt="i.materialise Logo" title="https://i.materialise.com/">
+      <p>From titanium to multicolor+, polyamide, 18K gold and more, i.materialise has what you’re looking for. With 20
+        different materials and over 100 possible color and finish combinations, we offer only the highest quality to
+        turn your ideas into 3D printed reality.
+        <a href="https://i.materialise.com/en">-i.materialise</a>
+      </p>
+      <button onclick="window.location.href='https://i.materialise.com/'">Visit i.materialise</button>
+    </div>
+  </div>
+
+  <!--Footer to contain a contact us, policy, copyright, ext...-->
+  <footer>
+    <h2>Join Us</h2>
+
+    <!--Allows for control over onboarding text and button styling independent of footer-->
+    <div class="onboarding"> 
+      <p>Explore the possibilities of the future with cutting-edge 3D printing technologies. Unleash your creativity,
+        bring ideas to life, and reshape the world around you. Embrace the endless innovation of additive manufacturing
+        where imagination meets precision. Signup for our monthly newsletter to start your journey into the realm of
+        limitless possibilities.</p>
+      <button>Join Here</button>
+    </div>
+    <!--A contact us with clickable mailto link-->
+    <p>Contact Us: <a href="mailto:Example@example.com">example@example.com</a></p>
+  </footer>
+</body>
+</html>
